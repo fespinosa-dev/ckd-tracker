@@ -6,7 +6,7 @@ deploy:
   region: us-east-1
   app: ckd-tracker
   env: ckd-tracker-dev
-  zip_file: "target/ckd-tracker-1.0.jar"
+  zip_file: "build/libs/ckd-tracker-1.0.jar"
   bucket_name: "elasticbeanstalk-us-east-1-542141166723"
   on:
     branch: master
