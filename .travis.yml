@@ -1,15 +1,11 @@
 language: java
 deploy:
   provider: elasticbeanstalk
-  access_key_id:
-    secure: "$AWS_ACCESS_KEY"
-  secret_access_key:
-    secure: "$AWS_SECRET_KEY"
+  access_key_id: $AWS_ACCESS_ID
+  secret_access_key: $AWS_SECRET_ID
   region: us-east-1
   app: ckd-tracker
   env: ckd-tracker-dev
-  bucket_name: elasticbeanstalk-us-east-1-542141166723
-env:
-  global:
-  - secure: Rs4KOD7LPXjObUYiT5jDkp1JZ55S5vpB+zXKf3yxRs3nFgLZI3gW2CzP/KO9AGMJe2aWfIZ5DLJ8hy9J2U7fJ0eER/LXU2GA54tquMNsaFcdRAhYg55vX6dvheEOl6SolCdKlqdFSrzxWKsuv6W6+sNw3teYE+LV1uw5ugyNCcb1tT2r0yIlya11HIXhDth+HU9ZTF8PNiOy3JTFYuPbMvxRXxoWadUNOizIgxVce6j8yHBrK4KWPzNt8E4Antgtfhzo0AHqgUK9Wo4sSBK8P85Y9blS+G0M61h97bXcuMTEswkFt08uszTVGEqExbczCei73czhlD4OjFl4v8tOAGbITm2Mq6AfoCJIXF5fGjY00eNL157y6W5tTdmMYwXDttgXtZTy0aOdDmSmB3S6KSNbF39Aa2kCNmikhTaLuOHh1Le1f5TfexHQXvT+6Bu7jg+MkEBbJZBtu6ST5F0SWDxhvzXjMQ9aADqWFiEZ+IenXakGo4oewtnAJIKsgpJmUWMeoFEoXGM3hFrSdDO8UnnlmvQKxn66PzxQ5C9uRrymoO/5pOW/ZxBl1g0cLVVS1x2lhvaEMfDd24L7BOVEZqjv+Sit8OHePYcj+S3gq54BmkXHeQlV9OCC/cGwvxUTrEykpGMsu1ue+c7zgGgQC3yeyc17YdS4n2lSY7AI9+M=
-  - secure: gFYUcf/yt62+yoebDfwJGIe/cW97FWXPWNvF0BvbqH/2rjKucKaOHHdqmWIu6dKgOkjnrMZI4Bmb+XJWz3IhBWDVO3GCIkwYWqPcET+5VWaGmpI0jUSe3hNmboLAStKFJLCSB2MmKgtN1tgLX6hGxpFKHYfZizbVZ+2DjNbPHb+nLR0Bu7DQvEcXLUT59KTMcK0Cpc+l5w9pGlme7pMk/OwkV51rAHp6AdoeLTugtGlbvKvktBQSDtv2X0dAwHNjqHEOp/VM3zgXrCrs2yH8yitp9XsrN418dJyxUmtk70nkyUtbx3/Y4Bxl9C3WIKqbqyNHAO2/xlbDPbwixtvE47ymZQ+Vs4+WJRPTNzow9UKpkGB/kyfd1KswiUobVj5PLVfERuqgxYWhXZIw+/lQ+BQ+BOJxbbL/z2eeZ8Go1k6bXLZOKVe5Da37DeQo4W2ha0T6MHVP4sKsBRdhVsPBpAxvYovskG+o/Az2lUbECrpHRhvCRrUDffxYO2hhbxya6FzSwRmHX6EEp7zf/c+Hjf87IrC1KzaVBR/NzuZfvDMGWtn0Q8xN/NvE4YKvMMYorBM0VWQefqFcgS87W1ps60K2g9TQliDv7xWVyIpdZ45pW7ZV90oLZxPLLHIEVkAntdj4ioWgaZiXcD/sGe3TlwqgwqPzui5V2R1H6xITvZE=
+  bucket_name: "elasticbeanstalk-us-east-1-542141166723"
+  on:
+    branch: master
