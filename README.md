@@ -1,4 +1,4 @@
-# ckd-tracker
+# ckd tracker
 [![Build Status](https://travis-ci.com/fespinosa-dev/ckd-tracker.svg?branch=master)](https://travis-ci.com/fespinosa-dev/ckd-tracker)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/3d805e68712241f3a8cadc92b06d54a8)](https://www.codacy.com/gh/fespinosa-dev/ckd-tracker/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=fespinosa-dev/ckd-tracker&amp;utm_campaign=Badge_Grade)
 [![Codacy Badge](https://app.codacy.com/project/badge/Coverage/3d805e68712241f3a8cadc92b06d54a8)](https://www.codacy.com/gh/fespinosa-dev/ckd-tracker/dashboard?utm_source=github.com&utm_medium=referral&utm_content=fespinosa-dev/ckd-tracker&utm_campaign=Badge_Coverage)
