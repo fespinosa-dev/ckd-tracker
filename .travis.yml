@@ -5,15 +5,15 @@ before_install:
 after_success:
   - java -jar ~/codacy-coverage-reporter-assembly-latest.jar report -l Java -r target/site/jacoco/jacoco.xml
 
-deploy:
-  provider: elasticbeanstalk
-  access_key_id: $AWS_ACCESS_ID
-  secret_access_key: $AWS_SECRET_ID
-  region: us-east-1
-  app: ckd-tracker
-  env: ckd-tracker-dev
-  zip_file: "target/ckd-tracker-1.0.jar"
-  skip_cleanup: true
-  bucket_name: "elasticbeanstalk-us-east-1-542141166723"
-  on:
-    branch: master
+#deploy:
+#  provider: elasticbeanstalk
+#  access_key_id: $AWS_ACCESS_ID
+#  secret_access_key: $AWS_SECRET_ID
+#  region: us-east-1
+#  app: ckd-tracker
+#  env: ckd-tracker-dev
+#  zip_file: "target/ckd-tracker-1.0.jar"
+#  skip_cleanup: true
+#  bucket_name: "elasticbeanstalk-us-east-1-542141166723"
+#  on:
+#    branch: master
